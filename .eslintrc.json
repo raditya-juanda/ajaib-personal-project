@@ -1,0 +1,34 @@
+{
+	"extends": ["airbnb", "airbnb/hooks", "plugin:prettier/recommended", "plugin:jest/recommended"],
+	"plugins": ["tailwindcss"],
+	"env": {
+		"browser": true,
+		"es2022": true,
+		"jest": true
+	},
+	"rules": {
+		"camelcase": "off",
+		"default-param-last": "off",
+		"no-console": ["error", { "allow": ["error"] }],
+		"no-unused-expressions": ["error", { "allowShortCircuit": true }],
+		"import/prefer-default-export": "off",
+		"prettier/prettier": [
+			"error",
+			{
+				"endOfLine": "auto"
+			}
+		],
+		"react/function-component-definition": [2, {
+			"namedComponents": "arrow-function",
+			"unnamedComponents": "arrow-function"
+		}],
+		"react/no-array-index-key": "off",
+		"tailwindcss/classnames-order": "off",
+		"tailwindcss/enforces-negative-arbitrary-values": "error",
+		"tailwindcss/enforces-shorthand": "error",
+		"tailwindcss/migration-from-tailwind-2": "off",
+		"tailwindcss/no-arbitrary-value": "off",
+		"tailwindcss/no-custom-classname": "off",
+		"tailwindcss/no-contradicting-classname": "error"
+	}
+}
